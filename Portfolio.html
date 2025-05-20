@@ -3,22 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Digital Clock & Factorial Calculator</title>
-  <link rel="stylesheet" href="Week1.css" />
+  <title>Nandini's Portfolio 💼</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Digital Clock</h1>
-    <div id="clock" class="clock">00:00:00</div>
+  <header>
+    <h1>Nandini S. — Web Developer</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#factorial">Factorial Tool</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <h2>Factorial Calculator</h2>
-    <input type="number" id="numberInput" placeholder="Enter a positive integer" />
-    <div class="buttons">
-      <button onclick="calculateIterative()">Iterative</button>
-      <button onclick="calculateRecursive()">Recursive</button>
+  <section id="about">
+    <h2>👩‍💻 About Me</h2>
+    <p>Hello! I'm Nandini, a passionate full-stack developer who loves building impactful web applications. I specialize in MERN stack, clean UI/UX, and meaningful problem-solving.</p>
+  </section>
+
+  <section id="projects">
+    <h2>📂 Portfolio</h2>
+    <ul>
+      <li><strong>College Resource Hub:</strong> MERN app for uploading and sharing notes by branch and semester.</li>
+      <li><strong>Car Service Reminder:</strong> JavaScript-based tool for maintaining car service logs.</li>
+      <li><strong>Virtual Postcard Designer:</strong> Tool to create & share animated postcards online.</li>
+    </ul>
+  </section>
+
+  <section id="factorial">
+    <h2>🧮 Factorial Calculator</h2>
+    <div class="calc-container">
+      <input type="number" id="factorialInput" placeholder="Enter a positive number" />
+      <select id="method">
+        <option value="iterative">Iterative</option>
+        <option value="recursive">Recursive</option>
+      </select>
+      <button onclick="calculateFactorial()">Calculate</button>
+      <div id="result"></div>
     </div>
-    <div id="result" class="result"></div>
-  </div>
-  <script src="Week1.js"></script>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>📧 Email: <a href="mailto:nandini@example.com">nandini@example.com</a></p>
+    <p>🌐 GitHub: <a href="https://github.com/nandinixx" target="_blank">nandinixx</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Nandini S. | Portfolio Website</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
